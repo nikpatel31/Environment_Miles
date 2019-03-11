@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    app:srcCompat="@drawable/other" />
+
+<ImageView
+    android:id="@+id/loginlogo"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="72dp"
+    android:layout_marginLeft="72dp"
+    android:layout_marginTop="70dp"
+    android:layout_marginEnd="71dp"
+    android:layout_marginRight="71dp"
+    android:contentDescription="loginlogo"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.47"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    app:srcCompat="@drawable/ll" />
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:autofillHints=""
+        android:drawableStart="@android:drawable/sym_action_email"
+        android:ems="10"
+        android:hint="email ID"
+        android:inputType="textPersonName|textEmailAddress"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        tools:paddingTop="8dp" />
+
+<EditText
+    android:id="@+id/passwordfield"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_below="@+id/loginlogo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="91dp"
+    android:autofillHints=""
+    android:drawableStart="@android:drawable/ic_lock_idle_lock"
+    android:ems="10"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:singleLine="false"
+    android:textSize="18sp"
+    android:textStyle="normal"
+    tools:paddingTop="8dp" />
+
+<android.support.v7.widget.CardView
+    android:id="@+id/loginbutton"
+    android:layout_width="250dp"
+    android:layout_height="50dp"
+    android:layout_below="@+id/passwordfield"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="10dp"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/logintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="LOGIN"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/signupbutton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="30dp"
+        app:cardPreventCornerOverlap="false">
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="SIGN UP"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

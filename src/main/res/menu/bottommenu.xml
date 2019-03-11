@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_action_home"
+        android:icon="@drawable/baseline_home_black_24dp"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/bottom_action_rank"
+        android:icon="@drawable/baseline_format_list_numbered_black_24dp"
+        android:title="@string/rank" />
+    <item
+        android:id="@+id/bottom_action_redeem"
+        android:icon="@drawable/baseline_redeem_black_24dp"
+        android:title="@string/redeem" />
+    <item
+        android:id="@+id/bottom_action_profile"
+        android:icon="@drawable/baseline_person_black_24dp"
+        android:title="@string/profile" />
+</menu>
